@@ -1,9 +1,0 @@
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\bin\Debug\netcoreapp3.1\JsonStorage.deps.json
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\bin\Debug\netcoreapp3.1\JsonStorage.dll
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\obj\Debug\netcoreapp3.1\JsonStorage.csprojAssemblyReference.cache
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\obj\Debug\netcoreapp3.1\JsonStorage.AssemblyInfoInputs.cache
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\obj\Debug\netcoreapp3.1\JsonStorage.AssemblyInfo.cs
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\bin\Debug\netcoreapp3.1\JsonStorage.pdb
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\obj\Debug\netcoreapp3.1\JsonStorage.csproj.CoreCompileInputs.cache
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\obj\Debug\netcoreapp3.1\JsonStorage.dll
-C:\Users\roman\source\repos\JsonStorage\JsonStorage\obj\Debug\netcoreapp3.1\JsonStorage.pdb
