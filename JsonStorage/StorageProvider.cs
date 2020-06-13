@@ -95,8 +95,9 @@ namespace JsonStorage
         {
             try
             {
-                var table = GetInternalTable<T>(tableName);
+                Table<T> table = GetInternalTable<T>(tableName);
                 table.Insert(items);
+                _tablesCache[table.Name] = table;
                 return true;
             }
             catch (IOException e)
@@ -148,12 +149,14 @@ namespace JsonStorage
         {
             var table = GetInternalTable<T>(tableName);
             table.Remove(toDelete);
+            _tablesCache[table.Name] = table;
         }
 
         public void DeleteAll<T>(string tableName = null)
         {
             var table = GetInternalTable<T>(tableName);
             table.Clear();
+            _tablesCache[table.Name] = table;
         }
 
         public void Close()

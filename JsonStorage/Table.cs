@@ -19,7 +19,11 @@ namespace JsonStorage
         {
             foreach (var item in items)
             {
-                Insert(item);
+                if (_setId)
+                { 
+                    typeof(T).GetProperty("Id").SetValue(item, ++_id);
+                }
+                Collection.Add(item);
             }
         }
 
