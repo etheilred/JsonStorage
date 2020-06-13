@@ -13,3 +13,9 @@
 /httpRequests/
 /storage/
 /storage2/
+/bin/*
+/obj/*
+*.nupkg
+*.dll
+*.exe
+*.pdb
