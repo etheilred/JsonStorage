@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 namespace JsonStorage
 {
     [JsonObject]
-    internal class Table<T> : IEnumerable<T>, IJsonSerializable
+    public class Table<T> : IEnumerable<T>, IJsonSerializable
     {
         [JsonProperty]
         private int _id = 0;

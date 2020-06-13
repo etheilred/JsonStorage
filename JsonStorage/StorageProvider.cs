@@ -142,7 +142,13 @@ namespace JsonStorage
                 table = new Table<T>() { Name = $"{typeof(T)}{tableName}" };
             }
 
-            return table ?? new Table<T>() { Name = $"{typeof(T)}{tableName}" };
+            var internalTable = table;
+            if (internalTable != null)
+            {
+                return internalTable;
+            }
+
+            return new Table<T>() { Name = $"{typeof(T)}{tableName}" };
         }
 
         public void Delete<T>(Predicate<T> toDelete, string tableName = null)

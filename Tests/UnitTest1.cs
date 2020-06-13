@@ -37,7 +37,20 @@ namespace Tests
                 {
                     1, 2, 3, 4, 5
                 });
-                Assert.AreEqual(new[] {1,2,3,4,5}, _provider.GetTable<int>().ToArray());
+                Assert.AreEqual(new[] {1, 2, 3, 4, 5}, _provider.GetTable<int>().ToArray());
+                _provider.DeleteAll<int>();
+            }
+        }
+
+        [Test]
+        public void TestDelete()
+        {
+            using (_provider = new StorageProvider(PathToStorageDir))
+            {
+                _provider.DeleteAll<int>();
+                _provider.Write<int>(new[] {1, 2, 3, 4, 5});
+                _provider.Delete<int>(i => i == 2);
+                Assert.AreEqual(new[] {1, 3, 4, 5}, _provider.GetTable<int>().ToArray());
                 _provider.DeleteAll<int>();
             }
         }

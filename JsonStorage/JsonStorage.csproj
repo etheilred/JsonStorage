@@ -3,8 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageVersion>0.0.1</PackageVersion>
+    <PackageVersion>0.0.2</PackageVersion>
     <Authors>Etheilred</Authors>
+    <Title>JsonStorage</Title>
+    <PackageProjectUrl>https://github.com/etheilred/JsonStorage</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/etheilred/JsonStorage/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/etheilred/JsonStorage.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>

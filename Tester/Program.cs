@@ -13,11 +13,8 @@ namespace Tester
         {
             using (var sp = new StorageProvider(@"..\..\..\..\storage2"))
             {
-                sp.Write<int>(new int[]{1,2,3,4});
-                foreach (var i in sp.GetTable<int>())
-                {
-                    Console.WriteLine(i);
-                }
+                // sp.Write<A>(new A[] {new A(), new A(), new A(),});
+                sp.Delete<A>(x => x.Id == 1);
             }
         }
 
